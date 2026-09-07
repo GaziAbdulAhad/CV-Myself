@@ -5,6 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Gazi Abdul Ahad — Network &amp; NOC Engineer</title>
 <meta name="description" content="Gazi Abdul Ahad — Network Support &amp; NOC Engineer specializing in Mikrotik, Juniper, CCNA, VLAN, OSPF and ISP network infrastructure. Based in Savar, Dhaka, Bangladesh.">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none';">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%23101B2D%22/><circle cx=%2250%22 cy=%2250%22 r=%2210%22 fill=%22%2321A15A%22/></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -230,6 +232,16 @@
   .tl-date{font-size:13.5px; color:var(--muted); white-space:nowrap;}
   .tl-org{color:var(--signal); font-size:14.5px; font-weight:600; margin-top:4px;}
   .tl-desc{margin-top:10px; color:var(--ink-soft); font-size:15px; max-width:62ch;}
+  .tl-bullets{list-style:none; margin:12px 0 0; padding:0; max-width:62ch;}
+  .tl-bullets li{
+    position:relative; padding-left:18px; margin-bottom:9px;
+    color:var(--ink-soft); font-size:15px; line-height:1.5;
+  }
+  .tl-bullets li:last-child{margin-bottom:0;}
+  .tl-bullets li::before{
+    content:''; position:absolute; left:0; top:8px;
+    width:6px; height:6px; border-radius:50%; background:var(--signal);
+  }
 
   /* ---------- projects ---------- */
   .proj-grid{display:grid; grid-template-columns:1fr 1fr; gap:18px;}
@@ -244,6 +256,20 @@
   .proj-tags span{
     font-size:12.5px; color:var(--amber); background:var(--amber-soft);
     padding:4px 9px; border-radius:5px; font-weight:600;
+  }
+  .proj-subhead{
+    font-size:13.5px; font-weight:700; color:var(--muted);
+    margin:0 0 16px; letter-spacing:0.01em;
+  }
+  .netproj{position:relative; padding-top:30px;}
+  .proj-num{
+    position:absolute; top:22px; right:22px;
+    font-family:'Archivo',sans-serif; font-weight:800; font-size:13px;
+    color:var(--line); letter-spacing:0.02em;
+  }
+  .proj-platform{
+    font-size:13.5px; font-weight:600; color:var(--signal);
+    margin:0 0 12px;
   }
 
   /* ---------- lists (certs / education) ---------- */
@@ -310,7 +336,7 @@
         <div>
           <div class="eyebrow-name">Gazi Abdul Ahad</div>
           <h1 class="headline">Keeping ISP networks online, one link at a time.</h1>
-          <p class="lede">Computer Science graduate with 6.3+ years across NOC operations, network monitoring and L2 technical support — hands-on with Mikrotik routing, VLAN, OSPF, DHCP and Juniper/CCNA-based configuration for broadband and enterprise clients.</p>
+          <p class="lede">Computer Science graduate with 4+ years of experience in NOC operations, network monitoring and L2 technical support — hands-on with Mikrotik routing, VLAN, OSPF, DHCP and Juniper/CCNA-based configuration for broadband and enterprise clients.</p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="mailto:gaziabdulahad96@gmail.com">Email me</a>
             <a class="btn btn-ghost" href="#experience">See experience</a>
@@ -335,7 +361,7 @@
 
     <div class="trace">
       <div class="trace-track">
-        <div class="hop"><div class="hop-dot"></div><b>6.3+ yrs</b><small>Total work experience</small></div>
+        <div class="hop"><div class="hop-dot"></div><b>4+ yrs</b><small>NOC &amp; network operations</small></div>
         <div class="hop"><div class="hop-dot"></div><b>ISP &amp; enterprise</b><small>Network environments</small></div>
         <div class="hop"><div class="hop-dot"></div><b>MTCNA</b><small>Mikrotik certified</small></div>
         <div class="hop"><div class="hop-dot"></div><b>BSc CSE</b><small>Green University of Bangladesh</small></div>
@@ -349,13 +375,14 @@
       </div>
       <div class="hero-grid" style="align-items:flex-start;">
         <div>
-          <p class="lede" style="max-width:58ch;">I'm a computer science graduate from Green University of Bangladesh, and over the last 6.3 years I've moved from customer-facing technical support into running NOC operations for an ISP. What I like about network work is the diagnosis — finding exactly where a link breaks, a route flaps, or a client's connection actually fails, and fixing it before it becomes everyone's problem.</p>
+          <p class="lede" style="max-width:58ch;">I'm a computer science graduate from Green University of Bangladesh. Since 2020, my experience has spanned floor plan design, customer service and three years of volunteer service at a community clinic — alongside 4+ years focused specifically on network operations. Currently, I manage NOC operations for an ISP: monitoring link performance, diagnosing routing and switching faults, and maintaining uptime across Mikrotik, Juniper and Cisco-based infrastructure covering VLAN, OSPF, DHCP and PPPoE.</p>
           <p class="lede" style="max-width:58ch; margin-top:16px;">Outside of routing and switching, I keep a habit of building things end to end — a hospital management system, a working 3-axis CNC machine, small web pages — mostly to stay comfortable moving between infrastructure and software. I also spent three years volunteering at a community clinic, which is where a lot of my patience for troubleshooting under pressure actually comes from.</p>
         </div>
         <div class="tool-panel" style="border:1px solid var(--line); border-radius:10px;">
           <h3><i></i>Quick facts</h3>
           <div class="list-entry"><div class="row1"><span>Based in</span><span style="font-weight:500; color:var(--ink-soft);">Savar, Dhaka, BD</span></div></div>
-          <div class="list-entry"><div class="row1"><span>Experience</span><span style="font-weight:500; color:var(--ink-soft);">6.3+ years</span></div></div>
+          <div class="list-entry"><div class="row1"><span>Network experience</span><span style="font-weight:500; color:var(--ink-soft);">4+ years</span></div></div>
+          <div class="list-entry"><div class="row1"><span>Total experience</span><span style="font-weight:500; color:var(--ink-soft);">6.3+ years</span></div></div>
           <div class="list-entry"><div class="row1"><span>Education</span><span style="font-weight:500; color:var(--ink-soft);">BSc CSE, 2020</span></div></div>
           <div class="list-entry"><div class="row1"><span>Languages</span><span style="font-weight:500; color:var(--ink-soft);">Bengali, English</span></div></div>
         </div>
@@ -366,7 +393,7 @@
       <div class="section-head">
         <div class="kicker">Toolbox</div>
         <h2>Technical depth, practical range.</h2>
-        <p>Core strength in routing and network operations, backed by IT support and enough web &amp; design skill to build the tools around it.</p>
+        <p>Core strength in routing and network operations, supported by IT systems administration and applied web and design capability.</p>
       </div>
       <div class="tool-grid">
         <div class="tool-panel">
@@ -417,7 +444,13 @@
             <div class="tl-date">Jul 2023 — Present</div>
           </div>
           <div class="tl-org">Layer3 Communication, Manikganj</div>
-          <p class="tl-desc">Manage end-to-end network troubleshooting and maintenance for ISP and enterprise infrastructure. Configure and optimize routers, switches and VLAN setups, monitor performance metrics via C-portal and NTTN, and manage IP configuration and data traffic to keep service availability high.</p>
+          <p class="tl-desc">Manage end-to-end network operations for ISP and enterprise customer infrastructure, using Mikrotik, Juniper and Cisco platforms.</p>
+          <ul class="tl-bullets">
+            <li>Configure and optimize routers, switches and VLAN setups to maintain stable, efficient data flow</li>
+            <li>Monitor network performance via C-portal and NTTN, resolving incidents proactively to sustain high service availability</li>
+            <li>Reduce recurring network faults through root-cause troubleshooting and preventative maintenance</li>
+            <li>Coordinate with clients and internal technical teams to minimize downtime and maintain connectivity</li>
+          </ul>
         </div>
         <div class="tl-item">
           <div class="tl-top">
@@ -425,7 +458,11 @@
             <div class="tl-date">Dec 2021 — Aug 2022</div>
           </div>
           <div class="tl-org">Agni System Limited, Gulshan</div>
-          <p class="tl-desc">Resolved client-side connectivity and bandwidth issues for home and SME users, with Mikrotik router setup and troubleshooting delivered through responsive, ticket-based technical support.</p>
+          <p class="tl-desc">Delivered frontline technical support for home and SME broadband customers.</p>
+          <ul class="tl-bullets">
+            <li>Resolved client-side connectivity and bandwidth issues through Mikrotik router setup and troubleshooting</li>
+            <li>Improved customer satisfaction through responsive, ticket-based support and clear technical guidance</li>
+          </ul>
         </div>
         <div class="tl-item">
           <div class="tl-top">
@@ -433,7 +470,11 @@
             <div class="tl-date">Sep 2021 — Dec 2021</div>
           </div>
           <div class="tl-org">VCube, Baridhara DOHS</div>
-          <p class="tl-desc">Built 3D building models, arranged room furniture layouts and prepared exterior building views for client presentations.</p>
+          <p class="tl-desc">Produced 3D building models and layout designs for client-facing presentations.</p>
+          <ul class="tl-bullets">
+            <li>Built 3D building models and exterior views using design software</li>
+            <li>Arranged room furniture layouts to support client approvals</li>
+          </ul>
         </div>
         <div class="tl-item">
           <div class="tl-top">
@@ -441,7 +482,11 @@
             <div class="tl-date">Jul 2020 — Jul 2023</div>
           </div>
           <div class="tl-org">Community Clinic, Boliarpur</div>
-          <p class="tl-desc">Supported rural communities with medical referrals, distributed medicines from local clinics and maintained patient records and healthcare documentation.</p>
+          <p class="tl-desc">Supported healthcare access for underserved rural communities.</p>
+          <ul class="tl-bullets">
+            <li>Coordinated medical referrals and distributed medicines from local clinics</li>
+            <li>Maintained accurate patient records and healthcare documentation</li>
+          </ul>
         </div>
       </div>
     </section>
@@ -449,9 +494,33 @@
     <section id="projects">
       <div class="section-head">
         <div class="kicker">Hands-on work</div>
-        <h2>Projects outside the day job.</h2>
-        <p>A mix of networking labs and small builds that go beyond "I know BGP" — real, working things.</p>
+        <h2>Projects &amp; hands-on labs.</h2>
+        <p>Real network infrastructure builds alongside independent projects — proof of applied networking and technical capability beyond routine day-to-day configuration.</p>
       </div>
+
+      <h3 class="proj-subhead">Network infrastructure</h3>
+      <div class="proj-grid-3" style="margin-bottom:44px;">
+        <div class="proj-card netproj">
+          <span class="proj-num">01</span>
+          <h3>ISP BGP Infrastructure</h3>
+          <p class="proj-platform">MikroTik + Juniper</p>
+          <div class="proj-tags"><span>BGP</span><span>iBGP</span><span>eBGP</span><span>Routing Policy</span></div>
+        </div>
+        <div class="proj-card netproj">
+          <span class="proj-num">02</span>
+          <h3>VXLAN EVPN Lab</h3>
+          <p class="proj-platform">Cisco Nexus</p>
+          <div class="proj-tags"><span>VXLAN</span><span>EVPN</span><span>BGP</span><span>VNI</span></div>
+        </div>
+        <div class="proj-card netproj">
+          <span class="proj-num">03</span>
+          <h3>FTTH / OLT Network</h3>
+          <p class="proj-platform">BDCOM / VSOL / Corelink / HSGQ / AVEIS / C-Data / ECOM / Photon</p>
+          <div class="proj-tags"><span>OLT</span><span>VLAN</span><span>PPPoE</span><span>Fiber</span></div>
+        </div>
+      </div>
+
+      <h3 class="proj-subhead">Independent builds</h3>
       <div class="proj-grid">
         <div class="proj-card">
           <h3>OSPF with DHCP configuration</h3>
@@ -489,9 +558,9 @@
           <div class="proj-tags"><span>2026</span></div>
         </div>
         <div class="proj-card">
-          <h3>Juniper JNCIS-SP</h3>
-          <p>Certified Internet Specialist – Service Provider</p>
-          <div class="proj-tags"><span>2026</span></div>
+          <h3>VXLAN with Cisco Nexus</h3>
+          <p>A two-day hands-on workshop covering VXLAN underlay and overlay design, BGP EVPN control plane, and multi-site fabric configuration on Cisco Nexus switches.</p>
+          <div class="proj-tags"><span>Workshop</span></div>
         </div>
         <div class="proj-card">
           <h3>Mikrotik MTCNA</h3>
@@ -541,7 +610,7 @@
       <div class="section-head">
         <div class="kicker">Useful support</div>
         <h2>Where I can help.</h2>
-        <p>Support scoped around what actually keeps a network — and the people relying on it — running.</p>
+        <p>Support scoped around the layers that keep a network reliable — from routing infrastructure to the systems and people depending on it.</p>
       </div>
       <div class="tool-grid">
         <div class="tool-panel">
@@ -566,24 +635,24 @@
     <section id="achievements">
       <div class="section-head">
         <div class="kicker">Keep moving forward</div>
-        <h2>A few things worth mentioning.</h2>
+        <h2>Selected highlights.</h2>
       </div>
       <div class="proj-grid">
         <div class="proj-card">
-          <h3>Juniper certified in 2026</h3>
-          <p>Completed JNCIA and JNCIS-SP, extending routing expertise beyond Mikrotik and CCNA into service-provider networking.</p>
+          <h3>Juniper JNCIA certified</h3>
+          <p>Completed Juniper JNCIA in 2026 and a two-day VXLAN with BGP EVPN workshop on Cisco Nexus, extending routing expertise beyond Mikrotik and CCNA into service-provider and data-center networking.</p>
         </div>
         <div class="proj-card">
-          <h3>6.3+ years in the field</h3>
-          <p>Grew from customer-facing technical support into running NOC operations for an ISP's enterprise infrastructure.</p>
+          <h3>4+ years in networking</h3>
+          <p>Progressed from customer-facing technical support into managing NOC operations for an ISP's enterprise infrastructure — part of a broader 6.3-year professional career that also included design and volunteer work.</p>
         </div>
         <div class="proj-card">
           <h3>Cross-disciplinary builder</h3>
-          <p>Shipped a hospital management system, a working 3-axis CNC machine and an OSPF/DHCP lab alongside full-time network work.</p>
+          <p>Delivered a hospital management system, a functional 3-axis CNC machine and an OSPF/DHCP routing lab alongside full-time network operations work.</p>
         </div>
         <div class="proj-card">
           <h3>3 years of community service</h3>
-          <p>Volunteered at a community clinic in Boliarpur, supporting medical referrals and healthcare access for rural patients.</p>
+          <p>Volunteered at a community clinic in Boliarpur, coordinating medical referrals and supporting healthcare access for rural patients.</p>
         </div>
       </div>
     </section>
@@ -592,7 +661,7 @@
 
 <footer id="contact">
   <div class="wrap">
-    <div class="foot-head">Let's talk networks.</div>
+    <div class="foot-head">Let's talk about your network.</div>
     <p class="foot-sub">Open to NOC, network engineering and IT support roles anywhere in Bangladesh — ISPs, software companies and enterprise IT teams welcome.</p>
     <div class="foot-actions">
       <a class="btn btn-primary" href="mailto:gaziabdulahad96@gmail.com">gaziabdulahad96@gmail.com</a>
